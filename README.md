@@ -18,4 +18,4 @@ Good base projects comes with good base dependencies:
 * [mocha] - test structure
 * [chai] - test engine for nodeJS
 * [Express] - fast node.js network app framework
-* [Babel] - transpiler for all expressions to all browsers!
+* [Babel] - transpiler for all environments
