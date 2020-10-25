@@ -2,12 +2,13 @@
   "name": "api_base",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node dist/server.js",
     "start:dev": "babel-node src/server.js",
-    "test:integration": "NODE_ENV=test mocha test/integration/**/*_spec.js",
-    "test:unit": "NODE_ENV=test mocha test/unit/**/*_spec.js",
+    "test:integration": "NODE_ENV=test mocha --require test/integration/helpers.js test/integration/**/*_spec.js",
+    "test:unit": "NODE_ENV=test mocha --require test/integration/helpers.js test/unit/**/*_spec.js",
     "build": "babel src --out-dir dist",
     "db:migrate": "npx sequelize db:migrate"
   },
