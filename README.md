@@ -1,6 +1,6 @@
 ## API_BASE
 
-[![Build Status](https://api.travis-ci.com/mrviniciux/api_base.svg?branch=main)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://api.travis-ci.com/mrviniciux/api_base.svg?branch=main)](https://travis-ci.com/mrviniciux/)
 
 ### !!!Under construct!!!
 
