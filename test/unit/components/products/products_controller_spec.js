@@ -1,13 +1,12 @@
-import ProductsController from '../../../../src/components/products/ProductsController';
+import ProductsController from '../../../../src/controllers/products/ProductsController.js';
 import sinon from 'sinon';
-import { expect } from 'chai';
 
 describe('Controller: products', () => {
-    const defaultProduct = {
+    const defaultProducts = [{
         name: 'Default product',
         description: 'product description',
         price: 100
-    };
+    }];
 
     describe('GET products', () => {
         it('Should return a list of products', () => {
@@ -16,11 +15,11 @@ describe('Controller: products', () => {
                 send: sinon.spy()
             };
 
-            const productsController = new ProductsController();
+            const productsController = new ProductsController(defaultProducts);
             productsController.get(request, response);
 
             expect(response.send.called).to.be.true;
-            expect(response.send.calledWith(defaultProduct)).to.be.true;
+            sinon.assert.calledWith(response.send, defaultProducts);
         });
     });
 
