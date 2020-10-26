@@ -19,3 +19,20 @@ Good base projects comes with good base dependencies:
 * [chai] - test engine for nodeJS
 * [Express] - fast node.js network app framework
 * [Babel] - transpiler for all environments
+
+
+### Run tests
+
+First things first: you need to install modules
+```sh
+$ cd api_base
+$ npm install
+```
+* Integration
+```sh
+$ npm run test:integration
+```
+* Unit
+```sh
+$ npm run test:unit
+```
