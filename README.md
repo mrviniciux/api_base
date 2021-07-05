@@ -4,7 +4,7 @@
 Requirements: 
 
  * GIT
- * Node v12
+ * Node >= v12
  * YARN
 
 <b>Developer mode:</b>
