@@ -4,6 +4,7 @@
 Requirements: 
 
  * GIT
+ * Node v12
  * YARN
 
 <b>Developer mode:</b>
