@@ -6,6 +6,7 @@ Requirements:
  * GIT
  * Node >= v12
  * YARN
+ * Relational database like mysql
 
 <b>Developer mode:</b>
 
